@@ -1,0 +1,55 @@
+.wraper .talk-list {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16rpx 0;
+    border-bottom: 1rpx solid #F6F6F6;
+}
+
+.wraper .talk-list image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border: 1rpx solid #F6F6F6;
+}
+
+.wraper .talk-list .talk-cont {
+    width: 320rpx;
+    margin-left: 40rpx;
+    font-size: 26rpx;
+    color: #666;
+}
+.wraper .talk-list .talk-cont .talk-nickName{
+    margin-bottom:20rpx;
+    color:#333;
+    font-size:28rpx;
+}
+
+.wraper .talk-list .talk-time {
+    margin-left: 40rpx;
+    font-size: 26rpx;
+    color: #999;
+}
+
+.empty-tips {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height: 200rpx;
+    font-size: 26rpx;
+    color:#666;
+    text-align: center;
+}
+.go-btn{
+    width:200rpx;
+    height:80rpx;
+    line-height: 80rpx;
+    margin :20rpx auto;
+    color:#fff;
+    font-size:28rpx;
+    background: #f34;
+    border-radius: 10rpx;
+}

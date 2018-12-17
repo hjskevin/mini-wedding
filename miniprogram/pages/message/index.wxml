@@ -1,0 +1,28 @@
+<view class="wraper">
+  <view class="blessingList" wx:if="{{blessingList!==''}}">
+    <view class="textarea-title">小伙伴的祝福：</view>
+    <ul>
+      <block wx:for="{{blessingList}}" wx:key="{{index}}">
+        <li class="talk-list">
+          <view>
+            <image src="{{item.avatar}}" mode="widthFix"/>
+          </view>
+          <view class="talk-cont">
+            <view class="talk-nickName">{{item.nickName}}</view>
+            <view>{{item.value}}</view>
+          </view>
+          <view class="talk-time">{{item.createTime}}</view>
+        </li>
+      </block>
+    </ul>
+    <navigator url="../more/index" open-type="navigate" hover-class="none">
+      <text decode="true" class="more">查看更多&gt;&gt;</text>
+    </navigator>
+  </view>
+  <view class="textarea-title">送上您的祝福吧:</view>
+  <textarea placeholder="请填写祝福新人的祝福语！" value='' placeholder-class='placeholder' show-confirm-bar='false' bindblur="getTextAreaValue"/>
+  <view wx:if="{{!auth}}">
+     <button type="default" size="defaultSize" hover-class="defaultTap" hover-start-time="{{time}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">提交祝福！需要授权登录</button>
+  </view>
+    <button type="default" size="defaultSize" hover-class="defaultTap" wx:else bindtap="submit">提交</button>
+</view>

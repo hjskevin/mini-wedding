@@ -1,0 +1,28 @@
+<view class="wrap">
+    <view class="tips">带*为必填项</view>
+    <view class="input-item">
+        <p class="label">*收件人:</p>
+        <input type="" placeholder="请输入收件人姓名" placeholder-class="placeholder" class="item" confirm-hold="true"/>
+    </view>
+    <view class="input-item">
+        <p class="label">*手机号码:</p>
+        <input type="" placeholder="请输入手机号码" class="item" confirm-hold="true"/>
+    </view>
+    <view class="input-item">
+        <p class="label">*所在地区:</p>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" class="item">
+          <view class="picker">
+            {{region[0]}}，{{region[1]}}，{{region[2]}}
+          </view>
+        </picker>
+    </view>
+    <view class="textarea-item">
+        <p class="label">*详细地址:</p>
+        <textarea placeholder="街道、楼牌号等" class="item"/>
+    </view>
+    <view class="input-item">
+        <p class="label">邮政编码:</p>
+       <input type="text" placeholder="请输入邮政编码" class="item" confirm-hold="true" />
+    </view>
+    <view class="commitBtn" bindtap="commitData">保存并提交</view>
+</view>

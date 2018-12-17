@@ -1,0 +1,10 @@
+<view class="wraper">
+    <view class="success-tips">
+        <view>感谢您的祝福！</view>
+        <view>向荣在家、恭贺您的来临！</view>
+        <view class="button-area">
+         <view bindtap="viewAdress">查看宴席地点</view>
+         <view bindtap="viewMessageList">查看祝福列表</view>
+        </view>
+    </view>
+</view>

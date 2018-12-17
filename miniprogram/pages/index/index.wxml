@@ -1,0 +1,41 @@
+<view class="container">
+  <swiper vertical="true" autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/1.png?sign=cc022bb9cb6a324cb5d6f60fe0770ea2&t=1544880450" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/2.png?sign=82eabedf17c6a2bdecd9edc3d734abf8&t=1544880495" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/3.png?sign=3729df35b8267cf3389e6c5c99da62fa&t=1544880512" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/4.png?sign=bb7c84ac71cfb75a9a0818215b5651f8&t=1544880524" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/5.png?sign=ebe9c13c9bc557d74d4d8b3c7af97e82&t=1544880537" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/6.png?sign=29df82747c4aff80bf9c0c38df15cd24&t=1544880550" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/7.png?sign=fe4da472228762ddfdec0135dc0a941b&t=1544880567" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/8.png?sign=3e9846ea93afdba885a5e6b6697fe903&t=1544880578" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/9.png?sign=78c5e3c74ddff3800af8291202478cf8&t=1544880615" class="slide-image" mode="widthFix" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://wedding-8cb59d.tcb.qcloud.la/images/10.png?sign=67049c9ffc048c7ce0441ae7e8b24184&t=1544880630" class="slide-image" mode="widthFix" />
+    </swiper-item>
+
+  </swiper>
+  <view class="music-btn" bindtap="close" wx:if="{{IsPlay}}">
+    <image src='../../images/music.png' mode="widthFix	"></image>
+  </view>
+  <view class="music-btn" bindtap="open" wx:else>
+    <image src='../../images/stop.png' mode="aspectFill"></image>
+  </view>
+</view>

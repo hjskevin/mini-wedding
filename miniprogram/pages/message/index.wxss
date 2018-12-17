@@ -1,0 +1,63 @@
+.wraper .talk-list {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #F6F6F6; }
+  .wraper .talk-list image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border: 1rpx solid #F6F6F6; }
+  .wraper .talk-list .talk-cont {
+    width: 320rpx;
+    margin-left: 40rpx;
+    font-size: 26rpx;
+    color: #666; }
+    .wraper .talk-list .talk-cont .talk-nickName{
+      margin-bottom:20rpx;
+      color:#333;
+      font-size:28rpx;
+  }
+  .wraper .talk-list .talk-time {
+    margin-left: 40rpx;
+    font-size: 26rpx;
+    color: #999; }
+
+.wraper .more {
+  display: block;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  color: #666;
+  text-align: center; }
+
+.wraper .textarea-title {
+  margin: 20rpx auto;
+  text-align: left;
+  font-size: 32rpx;
+  color: #FF3344; }
+
+.wraper textarea {
+  width: 100%;
+  height: 360rpx;
+  background: #F6F6F6;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  color: #333;
+  letter-spacing: 4rpx; }
+
+.wraper .placeholder {
+  color: #999999;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular; }
+
+.wraper button {
+  height:90rpx;
+  line-height: 90rpx;
+  margin: 40rpx 0;
+  background-color: #FF3344;
+  color: #fff;
+  font-size: 28rpx; }

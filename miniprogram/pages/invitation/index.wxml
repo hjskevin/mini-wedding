@@ -1,0 +1,22 @@
+<!-- 邀请函页面 -->
+<view class="bg">
+  <button hover-class="none" open-type="getUserInfo" bindgetuserinfo="getInfo" class="getbtn" wx:if="{{!showBtn}}">获取请柬</button>
+  <view class="container" wx:else>  
+    <!-- 欢迎语 -->
+    <view class="nick-name">亲爱的<text>{{nickName}}</text>您好:</view>
+    <!-- 请柬主体内容 -->
+    <view class="invation-cont">
+      谨定于<text>2019年2月14</text>日,农历<text>正月初十</text>,<text>星期四</text>举行结婚典礼。
+    </view>
+    <view class="welcome-tips">
+      <view decode="true">敬邀您来参见我们的婚礼</view>
+      <view>WELCOME TO OUR WEDDING</view>
+    </view>
+    <view class="name">张向荣 & 倪宏宇</view>
+    <view class="viewAdress" bindtap="GoToMan">导航去新郎家</view>
+    <view class="viewAdress" bindtap="GoToWoman">导航去新娘家</view>
+    <!-- <navigator hover-class="none" open-type="navigate" url="../post/index">
+      <view class="getAdress" bindtap="getAdress">填写邮寄地址,获取纸质请柬</view>
+    </navigator> -->
+  </view>
+</view>

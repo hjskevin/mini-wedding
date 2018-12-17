@@ -1,0 +1,17 @@
+<view class="wraper">
+    <ul wx:if="{{blessingList.length>0}}" >
+        <block wx:for="{{blessingList}}" wx:key="{{index}}">
+            <li class="talk-list">
+                <view>
+                    <image src="{{item.avatar}}" mode="widthFix" />
+                </view>
+                <view class="talk-cont">
+                    <view class="talk-nickName">{{item.nickName}}</view>
+                    <view>{{item.value}}</view>
+                </view>
+                <view class="talk-time">{{item.createTime}}</view>
+            </li>
+        </block>
+    </ul>
+    <view></view>
+</view>

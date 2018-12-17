@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/invitation/index",
+    "pages/message/index",
+    "pages/more/index",
+    "pages/post/index",
+    "pages/success/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "婚宴助手",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance":20
+  },
+  "tabBar": {
+    "selectedColor": "#FF3344",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "./images/home.png",
+      "selectedIconPath": "./images/homechecked.png",
+      "text": "照片"
+    }, {
+      "pagePath": "pages/invitation/index",
+      "iconPath": "./images/invation.png",
+      "selectedIconPath": "./images/invationchecked.png",
+      "text": "请柬"
+    }, {
+      "pagePath": "pages/message/index",
+      "iconPath": "./images/info.png",
+      "selectedIconPath": "./images/infochecked.png",
+      "text": "祝福"
+    }]
+  },
+  "debug": true,
+  "cloud": true
+}
